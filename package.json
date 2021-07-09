@@ -1,0 +1,15 @@
+{
+  "name": "ts-tutorial",
+  "version": "1.0.0",
+  "description": "- 이번 기회에 타입스크립트 구석구석 제대로 익혀보겠습니다.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^4.3.5"
+  }
+}
