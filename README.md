@@ -23,3 +23,9 @@
 | 상속       | extends를 사용                                    | intersections(&)를 사용 |
 | new field  | 같은 interface를 정의하면 새로운 필드로 추가된다. | 에러                    |
 | union type | 불가능                                            | 가능                    |
+
+### type guard, narrowing, type predicates
+
+- typescript에서는 여러 가지 type guard들이 있다. 타입을 체크하는 특별한 코드를 의미하는데 이를 활용해 타입을 narrowing할 수 있다. 즉, 좀 더 specific한 타입으로 범위를 줄여가는 과정이다.
+
+- type predicates는 user가 custom하게 정의할 수 있고 이를 활용해 narrowing할 수 있다. `pet is string` 을 return 타입에 사용한다.
