@@ -41,3 +41,7 @@
 ### Interfaces vs. Intersections
 
 - 타입을 확장하는 두가지 방법이다. 차이점은 interface는 extends키워드를 사용해서 확장을 하지만, intersections의 경우는 & 연산자를 활용한 결과에 type alias로 naming을 하여 이를 구현한다.
+
+### Arrow function in class
+
+- class에서 arrow함수, 일반 함수를 사용하는 것에 차이점이 있다. 일반 함수를 사용하면 이를 클래스에 바인딩하므로 프로토타입 chain를 통해 메서드를 검색할 수 있지만, arrow함수는 super키워드를 활용한 프로토타입 체인을 통해 메서드를 검색할 수 없다. 대신에 각 함수의 복사본을 인스턴스에 바인딩하므로 더 많은 메모리를 사용한다.
