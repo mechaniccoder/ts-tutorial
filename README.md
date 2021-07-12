@@ -29,3 +29,15 @@
 - typescript에서는 여러 가지 type guard들이 있다. 타입을 체크하는 특별한 코드를 의미하는데 이를 활용해 타입을 narrowing할 수 있다. 즉, 좀 더 specific한 타입으로 범위를 줄여가는 과정이다.
 
 - type predicates는 user가 custom하게 정의할 수 있고 이를 활용해 narrowing할 수 있다. `pet is string` 을 return 타입에 사용한다.
+
+### function overloading
+
+- 타입스크립트에서는 함수 오버로딩을 지원한다. 오버로딩은 크게 두 부분으로 나뉜다. overload signature / implementation signature
+
+- overload signature는 구현하는 부분이 아닌 함수의 인자와 리턴값의 관한 타입들을 표시하며, implementation signature는 실제로 이 함수를 어떻게 구현하는지를 표현한다.
+
+- implementation signature는 overload signature와 호환이 가능해야 한다.
+
+### Interfaces vs. Intersections
+
+- 타입을 확장하는 두가지 방법이다. 차이점은 interface는 extends키워드를 사용해서 확장을 하지만, intersections의 경우는 & 연산자를 활용한 결과에 type alias로 naming을 하여 이를 구현한다.
